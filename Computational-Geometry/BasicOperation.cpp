@@ -211,3 +211,25 @@ point rotate(point v,point p,double angle,double scale){
 	ret.y+=v.x*p.y+v.y*p.x;
 	return ret;
 }
+//计算三角形面积,输入三顶点
+double area_triangle(point p1,point p2,point p3){
+	return fabs(xmult(p1,p2,p3))/2;
+}
+double area_triangle(double x1,double y1,double x2,double y2,double x3,double y3){
+	return fabs(xmult(x1,y1,x2,y2,x3,y3))/2;
+}
+
+//计算三角形面积,输入三边长
+double area_triangle(double a,double b,double c){
+	double s=(a+b+c)/2;
+	return sqrt(s*(s-a)*(s-b)*(s-c));
+}
+
+//计算多边形面积,顶点按顺时针或逆时针给出
+double area_polygon(int n,point* p){
+	double s1=0,s2=0;
+	int i;
+	for (i=0;i<n;i++)
+		s1+=p[(i+1)%n].y*p[i].x,s2+=p[(i+1)%n].y*p[(i+2)%n].x;
+	return fabs(s1-s2)/2;
+}
