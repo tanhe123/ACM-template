@@ -1,4 +1,5 @@
 //整数几何函数库
+//注意运算可能会超过int表示范围
 #define sign(a) ((a)>0?1:(((a)<0?-1:0)))
 #define abs(x) ((x)>0?(x):-(x))
 struct point{int x,y;};
