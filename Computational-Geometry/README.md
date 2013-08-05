@@ -17,7 +17,6 @@ Computational Geometry
 
   		Please Pay Attention:
   		
-  		
 				1. 注意舍入方式(0.5的舍入方向);防止输出-0.
 				
 				2. 几何题注意多测试不对称数据.
@@ -40,7 +39,8 @@ Computational Geometry
   				
 				7. 需要的话尽量使用atan2,注意:atan2(0,0)=0,
 				
-   			atan2(1,0)=pi/2,atan2(-1,0)=-pi/2,atan2(0,1)=0,atan2(0,-1)=pi.
+   				atan2(1,0)=pi/2,atan2(-1,0)=-pi/2
+   				atan2(0,1)=0,atan2(0,-1)=pi.
    			
 				8. cross product = |u|*|v|*sin(a)
 				
