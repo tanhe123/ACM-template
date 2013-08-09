@@ -65,7 +65,7 @@ int modular_exponent(int a,int b,int n)
 //  x = b[1] (mod w[1])
 //  ...
 //  x = b[k-1] (mod w[k-1])
-//w[i]>0, w[i]relatively prime with w[j], the answers vary from 1 to n, and n=w[0]*w[1]*...*w[k-1]
+//w[i]>0, for each i and j, w[i] relatively prime with w[j], the answers vary from 1 to n, and n=w[0]*w[1]*...*w[k-1]
 int modular_linear_system(int b[],int w[],int k){
   int d,x,y,a=0,m,n=1,i;
 	for (i=0;i<k;i++)
