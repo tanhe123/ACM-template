@@ -8,3 +8,5 @@ ACM-template
 --Combinations(nCr)
 
 --Number Theory(Chinese Remainder Theorem, High-precision-modulo-algorithm, Modulo Linear Equations solve algorithm)
+
+--NetworkFlows(MaxFlows)
